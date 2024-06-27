@@ -1,0 +1,7 @@
+echo "# Deloitte_Colborator" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/VamshiNeelarapu/Deloitte_Colborator.git
+git push -u origin main
