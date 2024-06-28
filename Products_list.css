@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.card{
+    width:250px;
+    height:395px;
+    font-size:small;
+    font-weight: bold;
+   
+   
+   margin: 20px;
+    
+    
+   
+}
+.card-img-top {
+    height: 200px;
+    
+}
+.container{
+  padding-top:150px;
+  padding-bottom: 100px;
+    
+    
+    height:auto;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: blanchedalmond;
+    
+    
+    
+}
+.btn {
+color: black;
+
+background: linear-gradient(to right, black 50%, rgb(40, 125, 245) 50%);
+background-size: 200% 100%;
+background-position: right bottom;
+transition: all 0.5s ease-out;
+border-radius: 30px;
+}
+
+
+
+.btn:hover {
+background-position: left bottom;
+}
+
+.img{
+transition: 3s;
+transition-timing-function: ease-out;
+}
+.card:hover{
+transform: scale(1.05);
+transition-timing-function: ease-out;
+}
+#myVideo {
+margin-top: 20px;
+width: 20%;
+height: 830px;
+object-fit: cover; 
+border: 2px solid black;
+float: left;
+box-shadow: 4px 4px;
+}
+.pagination {
+  padding-top: 40px;
+  justify-content: center;
+  font-size: large;
+  
+}
