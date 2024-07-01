@@ -2,6 +2,11 @@
   margin: 0 auto;
   width: 500px;
   padding: 20px 0;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .product-listing-carousel {
@@ -9,14 +14,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* border: 1px solid grey; */
   margin: 10px;
-  /* border-radius: 10px; */
 }
 
-.product-carousel img {
-  object-fit: cover;
-  object-position: center;
+.carousel-caption {
+  background-color: #0000007e;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 1400px) {

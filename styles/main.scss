@@ -1,9 +1,9 @@
-@import url(navbar.css);
-@import url(hero-section.css);
-@import url(productCarousel.css);
-@import url(productListing.css);
-@import url(testimonials.css);
-@import url(footer.css);
+@import "navbar";
+@import "heroSection";
+@import "productCarousel";
+@import "productListing";
+@import "testimonials";
+@import "footer";
 
 * {
   margin: 0;
