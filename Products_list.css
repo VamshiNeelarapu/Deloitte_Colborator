@@ -1,3 +1,5 @@
+@import url(navbar.css);
+@import url(footer.css);
 *{
     padding: 0;
     margin:0;
@@ -18,19 +20,21 @@
     height: 200px;
     
 }
-.container{
-  padding-top:150px;
+
+
+.container1{
+  margin-left: 70px;
+  padding-left: 40px;
+  padding-top:100px;
   padding-bottom: 100px;
-    
-    
-    height:auto;
-    border: 3px solid black;
-    border-radius: 6px;
-    background-color: blanchedalmond;
-    
-    
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
 }
+
+
+
 .btn {
 color: black;
 
@@ -55,17 +59,42 @@ transition-timing-function: ease-out;
 transform: scale(1.05);
 transition-timing-function: ease-out;
 }
-#myVideo {
-margin-top: 20px;
-width: 20%;
-height: 830px;
+
+
+ #myVideo {
+   padding-top:70px;
+margin-top: 50px;
+width: 15%;
+height: 850px; 
 object-fit: cover; 
-border: 2px solid black;
-float: left;
-box-shadow: 4px 4px;
+
+float: left; 
+
+
+
+} 
+
+@media (min-width: 768px) and(max-width:1200px) {
+  #myVideo {
+    width: 20%; 
+    height: 850px;
+  }
 }
+
+
+
+
+@media (min-width:576px)and(max-width: 767px) {
+  #myVideo {
+    width: 25%; 
+    height: 850px;
+  }
+}
+
+
+
 .pagination {
-  padding-top: 40px;
+  padding-top: 60px;
   justify-content: center;
   font-size: large;
   
