@@ -1,5 +1,29 @@
+@import url(Nav.css);
+@import url(footer.css);
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  user-select: none;
+}
+.pd {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0 auto rgb(233, 230, 230);
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.p {
+  text-align: justify;
+  padding: 20px;
 }
 .small-img {
   display: flex;
@@ -9,25 +33,33 @@
   width: 25%;
   flex-basis: 24%;
   cursor: pointer;
-  padding: 1%;
+  padding: 20px;
+}
+.small:hover {
+  scale: 1.1;
 }
 .m1 {
   margin: 50px;
 }
 #sl {
-  display: block;
+  display: inline;
   padding: 3px;
   margin: 10px;
+  margin-top: 0;
 }
 #nm {
   width: 50px;
+  padding: 3px;
   margin: 10px;
-  display: block;
+  display: inline;
 }
-.btn {
+.btn1 {
   background-color: rgb(53, 49, 49);
-  display: block;
-  margin: 10px;
+  width: 40%;
+  /* display: inline; */
+  margin: 40px;
+  margin-left: 10px;
+  margin-top: 0;
 }
 .dis {
   font-weight: lighter;
@@ -47,8 +79,33 @@
   display: flex;
   cursor: pointer;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .reli {
-  width: 100%;
+  width: 95%;
   height: 350px;
+  box-shadow: 3px 3px;
+}
+.rel-img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.img {
+  position: relative;
+  top: 0;
+  transition: 0.5s;
+}
+.img:hover {
+  top: -10px;
+  /* scale: 1.2; */
+}
+
+.icn-1 {
+  margin: 40px;
+  scale: 2;
+  color: rgb(49, 49, 46);
+  cursor: pointer;
+}
+.rel-link {
+  color: rgb(0, 0, 0);
 }
