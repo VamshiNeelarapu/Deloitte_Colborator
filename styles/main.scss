@@ -26,3 +26,12 @@ body {
   margin: 20px auto;
   border: 1px solid black;
 }
+body::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+  background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(252, 76, 105);
+}

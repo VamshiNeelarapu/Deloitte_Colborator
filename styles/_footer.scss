@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   .foot-list {
     margin-top: 40px;
 
@@ -90,6 +91,6 @@
 
   &:hover {
     transform: scale(1.02);
-    transition: 0.3s tranform ease;
+    transition: 0.3s tranform, color ease;
   }
 }
