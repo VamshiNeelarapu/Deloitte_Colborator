@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://imageio.forbes.com/specials-images/imageserve/638a98b6a088e5ce47202972/Girls-carrying-shopping-bags/960x0.jpg?format=jpg&width=1440') no-repeat center center/cover; /* Add your background image URL */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 1;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center; /* Align containers to the right from center */
+    width: 100%;
+    max-width: 1200px; /* Optional: limit the max-width for better appearance */
+    padding: 0 20px;
+    z-index: 2; /* Ensure container content is above the overlay */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 3; /* Ensure content is above the overlay */
+    margin-left: 20px; /* Add some margin to the left for spacing */
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.form-group a {
+    color: #dfe2e4;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.form-group a:hover {
+    color: #0056b3;
+}
+
+/* Toggle visibility based on :target pseudo-class */
+#login-container,
+#registration-container {
+    display: none;
+}
+
+#login:target #login-container,
+#registration:target #registration-container,
+#login-container:not(:target) {
+    display: block;
+}
