@@ -1,0 +1,11 @@
+.navbar-collapse.show {
+  background-color: rgba(0, 0, 0, 0.64);
+  transition: 0.2s background-color ease;
+  border-radius: 10px;
+  max-height: 100px;
+  transition: max-height 0.2s ease-in;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+}
