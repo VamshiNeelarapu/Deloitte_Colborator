@@ -72,3 +72,13 @@ label[for="toggle"] {
 label[for="toggle"]:hover {
   text-decoration: underline;
 }
+.b1 {
+  text-decoration: none;
+  color: #fffdfd;
+  text-align: center;
+  font-weight: bolder;
+}
+.b1:hover {
+  text-decoration: underline;
+  color: rgb(72, 72, 237);
+}
