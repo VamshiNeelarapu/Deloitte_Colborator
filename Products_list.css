@@ -1,0 +1,101 @@
+@import url(navbar.css);
+@import url(footer.css);
+*{
+    padding: 0;
+    margin:0;
+}
+.card{
+    width:250px;
+    height:395px;
+    font-size:small;
+    font-weight: bold;
+   
+   
+   margin: 20px;
+    
+    
+   
+}
+.card-img-top {
+    height: 200px;
+    
+}
+
+
+.container1{
+  margin-left: 70px;
+  padding-left: 40px;
+  padding-top:100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+
+
+.btn {
+color: black;
+
+background: linear-gradient(to right, black 50%, rgb(40, 125, 245) 50%);
+background-size: 200% 100%;
+background-position: right bottom;
+transition: all 0.5s ease-out;
+border-radius: 30px;
+}
+
+
+
+.btn:hover {
+background-position: left bottom;
+}
+
+.img{
+transition: 3s;
+transition-timing-function: ease-out;
+}
+.card:hover{
+transform: scale(1.05);
+transition-timing-function: ease-out;
+}
+
+
+ #myVideo {
+   padding-top:70px;
+margin-top: 50px;
+width: 15%;
+height: 850px; 
+object-fit: cover; 
+
+float: left; 
+
+
+
+} 
+
+@media (min-width: 768px) and(max-width:1200px) {
+  #myVideo {
+    width: 20%; 
+    height: 850px;
+  }
+}
+
+
+
+
+@media (min-width:576px)and(max-width: 767px) {
+  #myVideo {
+    width: 25%; 
+    height: 850px;
+  }
+}
+
+
+
+.pagination {
+  padding-top: 60px;
+  justify-content: center;
+  font-size: large;
+  
+}
