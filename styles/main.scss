@@ -1,0 +1,28 @@
+@import "navbar";
+@import "heroSection";
+@import "productCarousel";
+@import "productListing";
+@import "testimonials";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.center-hr {
+  width: 95%;
+  margin: 20px auto;
+  border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+.hover-shadow {
+  box-shadow: 0 0 0;
+  transition: 0.5s box-shadow ease;
+
+  &:hover {
+    box-shadow: 10px 5px 5px rgb(127, 127, 127);
+    transition: 0.5s box-shadow ease;
+  }
+}
+
+.t-card {
+  width: 40%;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}

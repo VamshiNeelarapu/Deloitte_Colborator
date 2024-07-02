@@ -1,0 +1,32 @@
+.product-carousel {
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px 0;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.product-listing-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.carousel-caption {
+  background-color: #0000007e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .product-carousel {
+    margin: 0 auto;
+    width: 650px;
+    padding: 20px 0;
+  }
+}
