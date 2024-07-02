@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="new style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container my-3">
+        <h2 class="mb-3">Shopping Bag & Checkout</h2>
+        <div class="row">
+            <!-- Shopping Bag Section -->
+            <div class="col-md-6">
+                <div class="card mb-2">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <img src="c:\Users\user\Downloads\skirt.jpg" class="card-img" alt="A-line Cargo Skirt">
+                        </div>
+                        <div class="col-9 position-relative">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">A-line Cargo Skirt - Rs. 1,799.00</h5>
+                                <p class="card-text text-muted small">
+                                    Art.no. 1230555001<br>
+                                    Colour: Light beige<br>
+                                    Size: XXS <span class="text-danger">Few pieces left</span><br>
+                                    Total: Rs. 1,799.00
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-group mb-0">
+                                        <label for="quantity1" class="sr-only">Quantity</label>
+                                        <select class="form-control form-control-sm square-select" id="quantity1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-heart ml-2"><i class="far fa-heart"></i></button>
+                                    <a href="#" class="delete-icon ml-2"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <img src="c:\Users\user\Downloads\blazer.jpg" class="card-img" alt="Fitted Jacket">
+                        </div>
+                        <div class="col-9 position-relative">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">Fitted Jacket - Rs. 2,299.00</h5>
+                                <p class="card-text text-muted small">
+                                    Art.no. 0988242004<br>
+                                    Colour: Dark Truffle<br>
+                                    Size: 46<br>
+                                    Total: Rs. 2,299.00
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-group mb-0">
+                                        <label for="quantity2" class="sr-only">Quantity</label>
+                                        <select class="form-control form-control-sm square-select" id="quantity2">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-heart ml-2"><i class="far fa-heart"></i></button>
+                                    <a href="#" class="delete-icon ml-2"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="row no-gutters">
+                        <div class="col-3">
+                            <img src="c:\Users\user\Downloads\pants.jpg" class="card-img" alt="Wide Jersey Trousers">
+                        </div>
+                        <div class="col-9 position-relative">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">Wide Jersey Trousers - <span class="text-danger">Rs. 746.10</span></h5>
+                                <p class="card-text text-muted small">
+                                    <span class="text-muted" style="text-decoration: line-through;">Rs. 1,499.00</span><br>
+                                    Art.no. 1222000001<br>
+                                    Colour: Black<br>
+                                    Size: S<br>
+                                    Total: Rs. 746.10
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-group mb-0">
+                                        <label for="quantity3" class="sr-only">Quantity</label>
+                                        <select class="form-control form-control-sm square-select" id="quantity3">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-heart ml-2"><i class="far fa-heart"></i></button>
+                                    <a href="#" class="delete-icon ml-2"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Billing Section -->
+            <div class="col-md-6">
+                <div class="card p-2">
+                    <p class="font-weight-bold" style="font-size: 1.25rem;">Log in to use your personal offers</p>
+                    <button class="btn btn-outline-dark btn-block font-weight-bold" id="signinButton">Sign in</button>
+                    <p style="font-size: small;">
+                        Order value: Rs 5597.00<br>
+                        <br>
+                        Discount: - Rs 670.00<br>
+                        <br>
+                        Delivery: FREE
+                    </p>
+                    <hr>
+                    <h6 class="font-weight-bold">Total: Rs 4927.00</h6>
+                    <button class="btn btn-dark btn-block" id="checkoutButton">Continue to Checkout</button>
+                    <p style="font-size: small;" class="mt-2">We accept cash on delivery</p>
+                    <div class="d-flex justify-content-around">
+                        <img src="c:\Users\user\Downloads\visa.png" alt="VISA" class="payment-icon">
+                        <img src="c:\Users\user\Downloads\emi.jpg" alt="EMI" class="payment-icon">
+                        <img src="c:\Users\user\Downloads\rupay.png" alt="RUPAY" class="payment-icon">
+                        <img src="c:\Users\user\Downloads\upi.png" alt="UPI" class="payment-icon">
+                        <img src="c:\Users\user\Downloads\cardboard.jpg" alt="Cardboard" class="payment-icon">
+                    </div>
+                    <p style="font-size: small;" class="mt-2">
+                        Prices and delivery costs are not confirmed until you've reached the checkout.<br>
+                        15 days free returns. Read more about return and refund policy.<br>
+                        Customers would receive an SMS/WhatsApp notifications regarding deliveries on the registered phone number.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <img src="c:\Users\user\Downloads\box.jpg" alt="Delivery and return options" class="payment-icon">
+                        <p class="ml-2" id="deliveryReturnOptions" style="font-size: small;">Delivery and return options</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
